@@ -15,7 +15,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{" "}
+            <span className="opacity-50">Powered by</span>
             <Image
               src="/vercel.svg"
               alt="Vercel Logo"
