@@ -1,8 +1,10 @@
+const withMDX = require('@next/mdx')()
 /** @type {import('postcss-load-config').Config} */
 const config = {
+  pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
   plugins: {
     tailwindcss: {},
   },
 };
 
-export default config;
+module.exports = withMDX(config)
